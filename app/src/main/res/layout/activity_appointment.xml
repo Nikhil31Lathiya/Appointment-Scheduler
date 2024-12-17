@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".appointment">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/form_background"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="First Name"
+                android:textSize="16sp"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/firstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter First Name"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Last Name"
+                android:textSize="16sp"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/lastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Last Name"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Email"
+                android:textSize="16sp"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Email"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Mobile No"
+                android:textSize="16sp"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Mobile Number"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:inputType="phone"
+                android:maxLength="10"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Address"
+                android:textSize="16sp"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:hint="Enter Address"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Date (YYYY-MM-DD)"
+                android:textSize="16sp"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="Select Date"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:inputType="none" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Time (HH:MM)"
+                android:textSize="16sp"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="Select Time"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:inputType="none"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Appointment Subject"
+                android:textSize="16sp"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Subject"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/bookAppointmentBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Book Appointment"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/button_color"
+                android:elevation="2dp"/>
+
+            <Button
+                android:id="@+id/viewBookedAppointmentsBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="View Booked Appointments"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/button_color"
+                android:elevation="2dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
